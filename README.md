@@ -38,7 +38,7 @@ cacheSolve <- function(x,...) {
 	inv
 }
 
-## Testing Functions
+## --Testing Functions--
 mymatrix <- makeCacheMatrix(matrix(1:4, 2, 2))
 mymatrix$get()
 mymatrix$getInverse()
