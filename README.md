@@ -6,6 +6,7 @@
 ## Second, it gets the value of the Matrix.
 ## Third, it sets the value of the Inverse of Matrix.
 ## Fourth, it gets the Value of the Inverse of the Matrix.
+
 makeCacheMatrix <- function(x=matrix()){
 	inv <- NULL
 	set <- function(y){
@@ -15,7 +16,6 @@ makeCacheMatrix <- function(x=matrix()){
 	get <- function()x
 	setInverse <- function(inverse) inv <<- inverse
 	getInverse <-function() inv
-	
 	list(set = set, 
 	get=get,
 	setInverse = setInverse,
@@ -44,7 +44,6 @@ mymatrix <- makeCacheMatrix(matrix(1:4, 2, 2))
 mymatrix$get()
 mymatrix$getInverse()
 cacheSolve(mymatrix)
-
 mymatrix <- makeCacheMatrix(matrix(c(5, 6, 7, 8), 2, 2))
 mymatrix$get()
 mymatrix$getInverse()
