@@ -36,10 +36,10 @@ makeCacheMatrix <- function(x=matrix()){
 
 }
 
-## The following function first checks if the inverse of the special has already been
-## calculated. If it has it skips the calculation and retreives the inverse from the
-## cache. If the inverse has not already been calculates  it calculates the inverse 
-## of the special "Matrix" created by the function above.
+## The following function first checks if the inverse of the special has already 
+## been calculated. If it has it skips the calculation and retreives the inverse 
+## from the cache. If the inverse has not already been calculates  it calculates 
+## the inverse of the special "Matrix" created by the function above.
 
 cacheSolve <- function(x,...) {
 
